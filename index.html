@@ -34,7 +34,7 @@
     </style>
 </head>
 
-<body class="bg-light-blue py-8">
+<body id="main-body" class=" py-8">
 
     <main class="font-poppins bg-light-blue">
 
@@ -47,12 +47,12 @@
             <div class="right flex items-center gap-8">
                 <div class="count bg-light-blue flex items-center gap-4 px-3 py-1 rounded-3xl">
                     <div><img class="header-text-size" src="./assets/checkbox.png" alt="checkbox"></div>
-                    <h1 class="header-text-size">23</h1>
+                    <h1 id="headerValue" class="header-text-size">23</h1>
                 </div>
 
                 <div
                     class="color-changer bg-light-blue h-[50px] w-[50px] rounded-[50%] flex justify-center items-center">
-                    <img class="" src="./assets/theme-btn.png" alt="theme-btn">
+                    <img id="bgc-changer" class="" src="./assets/theme-btn.png" alt="theme-btn">
                 </div>
             </div>
         </header>
@@ -65,13 +65,13 @@
                  <div class="bg-light-blue col-span-1 rounded-xl flex justify-center items-center gap-8 h-[100px]">
                     <div class="h-[50px] w-[50px] rounded-[50%] flex justify-center items-center bg-white"><img class="header-text-size" src="./assets/checkbox.png" alt="checkbox"></div>
                     <div class="flex flex-col">
-                        <p class="opacity-80 text-base">Task Assigned </p>
-                        <h1 class="header-text-size header-text-size font-bold">0<span>6</span></h1>
+                        <p class="opacity-80 text-base">Task Assigned</p>
+                        <h1 class="header-text-size header-text-size font-bold">0<span id="taskAssigned">6</span></h1>
                     </div>
                 </div>
 
-                <div class="col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl px-10 py-6 flex items-center gap-8 h-[100px]">
-                    <div><img src="./assets/board.png" alt="calender"></div>
+                <div id="change-page-1" class="col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl px-10 py-6 flex items-center gap-8 h-[100px]">
+                    <div><img src="./assets/board.png" alt="board"></div>
                     <p class="text-2xl text-white font-medium">Discover Something <br> New Today!</p>
                 </div>
 
@@ -108,7 +108,7 @@
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
 
-                        <button class="bg-blue-500 py-3 px-5 text-white rounded-lg">
+                        <button id="button-1" onclick="clickComplete('button-1')" class="bg-blue-500 py-3 px-5 text-white rounded-lg btn">
                             Completed
                         </button>
                     </footer>
@@ -131,7 +131,7 @@
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
 
-                        <button class="bg-blue-500 py-3 px-5 text-white rounded-lg">
+                        <button id="button-2" onclick="clickComplete('button-2')" class="bg-blue-500 py-3 px-5 text-white rounded-lg btn">
                             Completed
                         </button>
                     </footer>
@@ -155,7 +155,7 @@
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
 
-                        <button class="bg-blue-500 py-3 px-5 text-white rounded-lg">
+                        <button id="button-3" onclick="clickComplete('button-3')" class="bg-blue-500 py-3 px-5 text-white rounded-lg btn">
                             Completed
                         </button>
                     </footer>
@@ -178,7 +178,7 @@
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
 
-                        <button class="bg-blue-500 py-3 px-5 text-white rounded-lg">
+                        <button id="button-4" onclick="clickComplete('button-4')" class="bg-blue-500 py-3 px-5 text-white rounded-lg btn">
                             Completed
                         </button>
                     </footer>
@@ -202,7 +202,7 @@
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
 
-                        <button class="bg-blue-500 py-3 px-5 text-white rounded-lg">
+                        <button id="button-5" onclick="clickComplete('button-5')" class="bg-blue-500 py-3 px-5 text-white rounded-lg btn">
                             Completed
                         </button>
                     </footer>
@@ -226,7 +226,7 @@
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
 
-                        <button class="bg-blue-500 py-3 px-5 text-white rounded-lg">
+                        <button id="button-6" onclick="clickComplete('button-6')" class="bg-blue-500 py-3 px-5 text-white rounded-lg btn">
                             Completed
                         </button>
                     </footer>
@@ -245,15 +245,15 @@
                     <h4 class="text-xl font-medium">Activity Log</h4>
                 </div>
 
-                <button class="bg-blue-500 py-3 px-5 text-white rounded-lg w-fit">Clear History </button>
+                <button id="clear-activity" onclick="clearActivity('content','btn')" class="bg-blue-500 py-3 px-5 text-white rounded-lg w-fit">Clear History </button>
             </header>
 
             <hr class="border-dashed border-slate-500 mb-3" />
 
             <!-- contents -->
 
-            <div class="p-10 space-y-4 max-h-[64rem] overflow-auto">
-
+            <div id="content" class="p-4 space-y-4 max-h-[64rem] overflow-auto">
+                <!-- <div class="bg-light-blue p-4 rounded-xl">sgddddddddddddddddd</div> -->
             </div>
 
         </div>
