@@ -6,22 +6,18 @@
 
 html,
 body {
-    /* width: 100%;
-    height: 100%; */
     display: flex;
     justify-content: center;
+    background-color: rgba(244, 247, 255, 1);
 } 
 
 
 body main{
     width: 95%;
     height: 100%;
-    /* background-color: rgba(244, 247, 255, 1); */
-
     display: grid ;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows:100px repeat(5,1fr);
-    background-color: green;
     grid-template-areas: 
     "header header header header header header"
     "dashboard dashboard dashboard dashboard activity-logs activity-logs"

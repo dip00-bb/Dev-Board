@@ -34,9 +34,9 @@
     </style>
 </head>
 
-<body id="main-body" class=" py-8">
+<body id="main-body" class="py-8">
 
-    <main class="font-poppins bg-light-blue">
+    <main class="font-poppins">
 
         <header class="flex justify-between px-6 items-center bg-white rounded-2xl h-fit py-6">
             <div class="left flex justify-center items-center gap-4">
@@ -79,8 +79,8 @@
                 <div class="bg-light-blue rounded-xl flex justify-center items-center gap-8 h-[100px]">
                     <div><img src="./assets/calender.png" alt="calender"></div>
                     <div>
-                        <p class="text-2xl">Wed,</p>
-                        <span class="text-2xl font-bold">Jul 28 2025</span>
+                        <p id="day" class="text-2xl"></p>
+                        <span class="text-2xl font-medium"><span id="month"></span> <span id="date"></span> <span id="year"></span></span>
                     </div>
                 </div> 
 
@@ -128,7 +128,7 @@
                     <footer class="flex items-center justify-between">
                         <div>
                             <p class="text-teal-950">Deadline</p>
-                            <h2 class="text-base font-medium">21 March 2025</h2>
+                            <h2 class="text-base font-medium">25 March 2025</h2>
                         </div>
 
                         <button id="button-2" onclick="clickComplete('button-2')" class="bg-blue-500 py-3 px-5 text-white rounded-lg btn">
@@ -152,7 +152,7 @@
                     <footer class="flex items-center justify-between">
                         <div>
                             <p class="text-teal-950">Deadline</p>
-                            <h2 class="text-base font-medium">21 March 2025</h2>
+                            <h2 class="text-base font-medium">31 March 2025</h2>
                         </div>
 
                         <button id="button-3" onclick="clickComplete('button-3')" class="bg-blue-500 py-3 px-5 text-white rounded-lg btn">
@@ -199,7 +199,7 @@
                     <footer class="flex items-center justify-between">
                         <div>
                             <p class="text-teal-950">Deadline</p>
-                            <h2 class="text-base font-medium">21 March 2025</h2>
+                            <h2 class="text-base font-medium">01 April 2025</h2>
                         </div>
 
                         <button id="button-5" onclick="clickComplete('button-5')" class="bg-blue-500 py-3 px-5 text-white rounded-lg btn">
@@ -223,7 +223,7 @@
                     <footer class="flex items-center justify-between">
                         <div>
                             <p class="text-teal-950">Deadline</p>
-                            <h2 class="text-base font-medium">21 March 2025</h2>
+                            <h2 class="text-base font-medium">05 May 2025</h2>
                         </div>
 
                         <button id="button-6" onclick="clickComplete('button-6')" class="bg-blue-500 py-3 px-5 text-white rounded-lg btn">
@@ -253,7 +253,7 @@
             <!-- contents -->
 
             <div id="content" class="p-4 space-y-4 max-h-[64rem] overflow-auto">
-                <!-- <div class="bg-light-blue p-4 rounded-xl">sgddddddddddddddddd</div> -->
+                <!-- <div class="bg-light-blue p-4 rounded-xl">test</div> -->
             </div>
 
         </div>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+
+    <style>
+        .font-poppins {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .header-text-size {
+            font-size: clamp(1.5rem, 0.875rem + 2vw, 2rem);
+            ;
+        }
+
+        .header-img-size {
+            width: clamp(1.5rem, 0.875rem + 2vw, 2rem);
+            ;
+        }
+
+        .bg-light-blue {
+            background-color: rgba(244, 247, 255, 1);
+        }
+    </style>
+</head>
+
+<body class="w-full h-full font-poppins bg-light-blue p-8">
+
+    <header class="flex justify-between px-6 items-center bg-white rounded-2xl h-fit py-6">
+        <div class="left flex justify-center items-center gap-4">
+            <div><img class="header-img-size" src="./assets/logo.png" alt="logo"></div>
+            <h1 class="font-poppins font-light header-text-size">Dev<span class="font-bold">Board</span></h1>
+        </div>
+
+        <div>
+            <button id="change-page-2" class="bg-blue-500 py-3 px-5 text-white rounded-lg font-bold">Back to Desk</button>
+        </div>
+    </header>
+
+    <h4 class="text-center font-bold text-4xl mt-8 mb-8">Blog</h4>
+
+    <div>
+        <div class="bg-white rounded-xl mb-4">
+            <h4 class="font-bold text-2xl p-6">Question-1: What are the different way to select an element in dom?</h4>
+            <hr class="border-dashed border-slate-500" />
+            <p class="font-medium text-2xl p-6 opacity-70">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis optio accusantium soluta, repellat aspernatur nesciunt.</p>
+        </div>
+
+        <div class="bg-white rounded-xl mb-4">
+            <h4 class="font-bold text-2xl p-6">Question-2: What is the different between innerHTML, innerText and textContent?</h4>
+            <hr class="border-dashed border-slate-500" />
+            <p class="font-medium text-2xl p-6 opacity-70">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis optio accusantium soluta, repellat aspernatur nesciunt.</p>
+        </div>
+
+
+        <div class="bg-white rounded-xl mb-4">
+            <h4 class="font-bold text-2xl p-6">Question-3: What is event delegation in the dom?</h4>
+            <hr class="border-dashed border-slate-500" />
+            <p class="font-medium text-2xl p-6 opacity-70">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis optio accusantium soluta, repellat aspernatur nesciunt.</p>
+        </div>
+
+        <div class="bg-white rounded-xl mb-4">
+            <h4 class="font-bold text-2xl p-6">Question-4: What is event bubbling in the dom?</h4>
+            <hr class="border-dashed border-slate-500" />
+            <p class="font-medium text-2xl p-6 opacity-70">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis optio accusantium soluta, repellat aspernatur nesciunt.</p>
+        </div>
+    </div>
+    <script src="./script/question.js"></script>
+</body>
+
+</html>

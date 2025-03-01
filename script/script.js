@@ -39,6 +39,53 @@ let colorsArray=[
 
 
 
+
+// set current-date in calender
+
+let now = new Date();
+
+// week days
+let weekDays=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+let weekDay=`${weekDays[now.getDay()]} ,`;
+
+
+// set week day
+setInnerTextById('day',weekDay);
+
+
+
+// months
+let months=["Jan","Feb","March","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+let month=months[now.getMonth()];
+
+
+// set month
+setInnerTextById('month',month);
+
+
+
+
+// set date
+let date =now.getDate();
+setInnerTextById('date',date);
+
+
+
+
+// set year
+let year =now.getFullYear();
+setInnerTextById('year',year);
+
+
+
+
+
+
+
+
+
+
+
 function clickComplete(id) {
     if (taskAssigned !== 0) {
         // increase decrease 
@@ -73,6 +120,10 @@ function clickComplete(id) {
         button.disabled = true;
         button.style.opacity = 0.2;
         alert("Board Updated Successfully.");
+
+        if(taskAssigned===0){
+            alert("Congrats!!!! You have completed all the current task");
+        }
     }else{
         alert("All task done.");
     }
@@ -90,12 +141,6 @@ function clearActivity(id,classes){
     let activityDiv=document.getElementById(id);
     activityDiv.innerHTML='';
 
-    let allClasses=document.querySelectorAll(classes);
-    allClasses.forEach((cls)=>{
-        const disabledBtn=document.querySelector(cls);
-        disabledBtn.style.disabled=false;
-    });
-
 } 
 
 
@@ -105,16 +150,23 @@ const backgroundColorChanger=document.getElementById("bgc-changer");
 const mainBody=document.getElementById('main-body');
 
 backgroundColorChanger.addEventListener('click',()=>{
-    console.log("hello");
 
     const randomIndex=Math.floor((Math.random() * colorsArray.length)+1);
-    console.log(randomIndex);
-    console.log(colorsArray[randomIndex],colorsArray.length);
     mainBody.style.backgroundColor=colorsArray[randomIndex];
 
 
 }) 
 
 
+
+// visit question page from index html
+
+
+const pageChanger1=document.getElementById("change-page-1");
+
+
+pageChanger1.addEventListener('click',()=>{
+    window.location.href='../question.html'
+});
 
 
