@@ -166,7 +166,7 @@ const pageChanger1=document.getElementById("change-page-1");
 
 
 pageChanger1.addEventListener('click',()=>{
-    window.location.href='../question.html'
+    window.location.href='../question-html/question.html'
 });
 
 
