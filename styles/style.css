@@ -8,5 +8,54 @@ html,
 body {
     width: 100%;
     height: 100%;
-    background-color: red;
-}
+    display: flex;
+    justify-content: center;
+} 
+
+
+body main{
+    width: 95%;
+    height: 100%;
+    /* background-color: rgba(244, 247, 255, 1); */
+
+    display: grid ;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+    background-color: green;
+    grid-template-areas: 
+    "header header header header header header"
+    "dashboard dashboard dashboard dashboard activity-logs activity-logs"
+    "dashboard dashboard dashboard dashboard activity-logs activity-logs"
+    "dashboard dashboard dashboard dashboard activity-logs activity-logs"
+    "dashboard dashboard dashboard dashboard activity-logs activity-logs"
+    "dashboard dashboard dashboard dashboard activity-logs activity-logs";
+    ;
+
+    gap: 1.5rem;
+} 
+
+
+body main header{
+    grid-area: header;
+} 
+
+
+body main .dashboard{
+    grid-area: dashboard;
+
+    background-color:blue;
+} 
+
+
+body main .activity-logs{
+    grid-area: activity-logs;
+    background-color:yellow;
+} 
+
+
+
+
+
+
+
+
