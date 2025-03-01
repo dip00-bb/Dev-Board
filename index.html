@@ -34,11 +34,11 @@
     </style>
 </head>
 
-<body>
+<body class="bg-light-blue py-8">
 
-    <main class="font-poppins mb-24 bg-light-blue">
+    <main class="font-poppins bg-light-blue">
 
-        <header class="flex justify-between p-6 items-center bg-white">
+        <header class="flex justify-between px-6 items-center bg-white rounded-2xl h-fit py-6">
             <div class="left flex justify-center items-center gap-4">
                 <div><img class="header-img-size" src="./assets/logo.png" alt="logo"></div>
                 <h1 class="font-poppins font-light header-text-size">Dev<span class="font-bold">Board</span></h1>
@@ -52,21 +52,21 @@
 
                 <div
                     class="color-changer bg-light-blue h-[50px] w-[50px] rounded-[50%] flex justify-center items-center">
-                    <div class="w-full"><img class="header-text-size" src="./assets/theme-btn.png" alt=""></div>
+                    <img class="" src="./assets/theme-btn.png" alt="theme-btn">
                 </div>
             </div>
         </header>
 
         <!-- task left side -->
-        <div class="dashboard grid grid-rows-6 grid-cols-6 p-6 bg-white rounded-2xl space-y-4">
+        <div class="dashboard grid grid-rows-6 grid-cols-6 p-6 bg-white rounded-2xl space-y-4 h-full">
 
             <header class="row-span-1 col-span-6 grid grid-cols-4 gap-6 py-3">
 
                  <div class="bg-light-blue col-span-1 rounded-xl flex justify-center items-center gap-8 h-[100px]">
-                    <div><img class="header-text-size" src="./assets/checkbox.png" alt="checkbox"></div>
+                    <div class="h-[50px] w-[50px] rounded-[50%] flex justify-center items-center bg-white"><img class="header-text-size" src="./assets/checkbox.png" alt="checkbox"></div>
                     <div class="flex flex-col">
                         <p class="opacity-80 text-base">Task Assigned </p>
-                        <h1 class="header-text-size header-text-size font-bold">05</h1>
+                        <h1 class="header-text-size header-text-size font-bold">0<span>6</span></h1>
                     </div>
                 </div>
 
@@ -88,10 +88,10 @@
 
             </header>
 
-            <div class="row-span-5 col-span-6 grid grid-cols-3 grid-rows-2 gap-8 ">
+            <div class="row-span-5 col-span-6 grid grid-cols-3 grid-rows-2 gap-8">
 
                 <div class="ro bg-light-blue p-6 rounded-2xl flex justify-between flex-col gap-4">
-                    <span class="bg-white inline p-2 w-fit">ShopEase</span>
+                    <span class="bg-white inline p-2 w-fit rounded-lg">ShopEase</span>
 
                     <h3 class="font-medium text-2xl">Fix Mobile Button Issue </h3>
 
@@ -108,14 +108,14 @@
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
 
-                        <button class="bg-blue-500 py-3 px-5 rounded-lg">
+                        <button class="bg-blue-500 py-3 px-5 text-white rounded-lg">
                             Completed
                         </button>
                     </footer>
                 </div>
 
                 <div class="bg-light-blue p-6 rounded-2xl flex justify-between flex-col gap-4">
-                    <span class="bg-white inline p-2 w-fit">CloudSync</span>
+                    <span class="bg-white inline p-2 w-fit rounded-lg">CloudSync</span>
 
                     <h3 class="font-medium text-2xl">Add Dark Mode</h3>
 
@@ -131,14 +131,14 @@
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
 
-                        <button class="bg-blue-500 py-3 px-5 rounded-lg">
+                        <button class="bg-blue-500 py-3 px-5 text-white rounded-lg">
                             Completed
                         </button>
                     </footer>
                 </div>
 
                 <div class="bg-light-blue p-6 rounded-2xl flex justify-between flex-col gap-4">
-                    <span class="bg-white inline p-2 w-fit">SwiftPay</span>
+                    <span class="bg-white inline p-2 w-fit rounded-lg">SwiftPay</span>
 
                     <h3 class="font-medium text-2xl">Optimize Home page </h3>
 
@@ -155,14 +155,14 @@
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
 
-                        <button class="bg-blue-500 py-3 px-5 rounded-lg">
+                        <button class="bg-blue-500 py-3 px-5 text-white rounded-lg">
                             Completed
                         </button>
                     </footer>
                 </div>
 
                 <div class="bg-light-blue p-6 rounded-2xl flex justify-between flex-col gap-4">
-                    <span class="bg-white inline p-2 w-fit">Meta</span>
+                    <span class="bg-white inline p-2 w-fit rounded-lg">Meta</span>
 
                     <h3 class="font-medium text-2xl">Add new emoji 🤲</h3>
 
@@ -178,18 +178,18 @@
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
 
-                        <button class="bg-blue-500 py-3 px-5 rounded-lg">
+                        <button class="bg-blue-500 py-3 px-5 text-white rounded-lg">
                             Completed
                         </button>
                     </footer>
                 </div>
 
                 <div class="bg-light-blue p-6 rounded-2xl flex justify-between flex-col gap-4">
-                    <span class="bg-white inline p-2 w-fit">Google LLC</span>
+                    <span class="bg-white inline p-2 w-fit rounded-lg">Google LLC</span>
 
                     <h3 class="font-medium text-2xl">Integrate OpenAI API </h3>
 
-                    <p class="bg-white p-4 rounded-lg h-[5.75rem] text-ellipsis overflow-hidden whitespace-nowrap line-clamp-5">Debug using Chrome DevTools, check for
+                    <p class="bg-white p-4 rounded-lg">Debug using Chrome DevTools, check for
                         overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
 
@@ -202,21 +202,20 @@
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
 
-                        <button class="bg-blue-500 py-3 px-5 rounded-lg">
+                        <button class="bg-blue-500 py-3 px-5 text-white rounded-lg">
                             Completed
                         </button>
                     </footer>
                 </div>
-
 
                 <div class="bg-light-blue p-6 rounded-2xl flex justify-between flex-col gap-4 ">
                     <span class="bg-white inline p-2 w-fit rounded-lg">Glassdoar</span>
 
                     <h3 class="font-medium text-2xl">Improve Job searching </h3>
 
-                    <p class="bg-white p-4 rounded-lg overflow-hidden h-[5.75rem] text-ellipsis">Debug using Chrome
+                    <div class="bg-white p-4 rounded-lg ">Debug using Chrome
                         DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly</p>
+                        and ensure onClick works properly</div>
 
 
                     <hr class="border-dashed border-slate-500" />
@@ -227,7 +226,7 @@
                             <h2 class="text-base font-medium">21 March 2025</h2>
                         </div>
 
-                        <button class="bg-blue-500 py-3 px-5 rounded-lg">
+                        <button class="bg-blue-500 py-3 px-5 text-white rounded-lg">
                             Completed
                         </button>
                     </footer>
@@ -239,7 +238,23 @@
 
         <!-- activity-log right side -->
 
-        <div class="activity-logs rounded-2xl">
+        <div class="activity-logs rounded-2xl bg-white px-8 py-4">
+            <header class="h-fit flex items-center flex-col p-4 gap-4">
+                <div class="flex justify-center items-center gap-4">
+                    <span><img src="./assets/activity.png" alt="activity"></span>
+                    <h4 class="text-xl font-medium">Activity Log</h4>
+                </div>
+
+                <button class="bg-blue-500 py-3 px-5 text-white rounded-lg w-fit">Clear History </button>
+            </header>
+
+            <hr class="border-dashed border-slate-500 mb-3" />
+
+            <!-- contents -->
+
+            <div class="p-10 space-y-4 max-h-[64rem] overflow-auto">
+
+            </div>
 
         </div>
 
