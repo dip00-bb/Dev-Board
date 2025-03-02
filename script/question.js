@@ -5,6 +5,5 @@ const pageChanger2=document.getElementById("change-page-2");
 
 
 pageChanger2.addEventListener('click',()=>{
-    console.log("hello gghghghghghh")
-    window.location.href='../index.html'
+    window.location.href='/Dev-Board/index.html';
 });

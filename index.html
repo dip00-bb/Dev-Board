@@ -44,7 +44,7 @@
                 <h1 class="font-poppins font-light header-text-size">Dev<span class="font-bold">Board</span></h1>
             </div>
 
-            <div class="right flex items-center gap-8">
+            <div class="right flex items-center gap-4 lg:gap-8 ml-4">
                 <div class="count bg-light-blue flex items-center gap-4 px-3 py-1 rounded-3xl">
                     <div><img class="header-text-size" src="./assets/checkbox.png" alt="checkbox"></div>
                     <h1 id="headerValue" class="header-text-size">23</h1>
@@ -60,9 +60,9 @@
         <!-- task left side -->
         <div class="dashboard grid grid-rows-6 grid-cols-6 p-6 bg-white rounded-2xl space-y-4 h-full">
 
-            <header class="row-span-1 col-span-6 grid grid-cols-4 gap-6 py-3">
+            <header class="row-span-1 col-span-6 grid lg:grid-cols-4 gap-6 py-3">
 
-                 <div class="bg-light-blue col-span-1 rounded-xl flex justify-center items-center gap-8 h-[100px]">
+                 <div class="bg-light-blue col-span-2 lg:col-span-1 rounded-xl flex justify-center items-center gap-8 h-[100px]">
                     <div class="h-[50px] w-[50px] rounded-[50%] flex justify-center items-center bg-white"><img class="header-text-size" src="./assets/checkbox.png" alt="checkbox"></div>
                     <div class="flex flex-col">
                         <p class="opacity-80 text-base">Task Assigned</p>
@@ -70,13 +70,13 @@
                     </div>
                 </div>
 
-                <div id="change-page-1" class="col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl px-10 py-6 flex items-center gap-8 h-[100px]">
+                <div id="change-page-1" class="col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl px-10 py-16 sm:py-6 flex items-center gap-8 h-[100px]">
                     <div><img src="./assets/board.png" alt="board"></div>
                     <p class="text-2xl text-white font-medium">Discover Something <br> New Today!</p>
                 </div>
 
 
-                <div class="bg-light-blue rounded-xl flex justify-center items-center gap-8 h-[100px]">
+                <div class="col-span-2 lg:col-span-1 bg-light-blue rounded-xl flex justify-center items-center gap-8 h-[100px]">
                     <div><img src="./assets/calender.png" alt="calender"></div>
                     <div>
                         <p id="day" class="text-2xl"></p>
@@ -88,7 +88,7 @@
 
             </header>
 
-            <div class="row-span-5 col-span-6 grid grid-cols-3 grid-rows-2 gap-8">
+            <div class="row-span-5 col-span-6 grid grid-cols-1 lg:grid-cols-3 grid-rows-2 gap-8">
 
                 <div class="ro bg-light-blue p-6 rounded-2xl flex justify-between flex-col gap-4">
                     <span class="bg-white inline p-2 w-fit rounded-lg">ShopEase</span>

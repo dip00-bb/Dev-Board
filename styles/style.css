@@ -54,4 +54,18 @@ body main .activity-logs{
 
 
 
+@media only screen and (max-width: 1024px) {
+    body main {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); /* Defines 6 equal columns */
+        grid-template-rows: auto; /* Ensures rows adjust to content */
+        grid-template-areas: 
+            "header header header header header header"
+            "dashboard dashboard dashboard dashboard dashboard dashboard"
+            "dashboard dashboard dashboard dashboard dashboard dashboard"
+            "dashboard dashboard dashboard dashboard dashboard dashboard"
+            "activity-logs activity-logs activity-logs activity-logs activity-logs activity-logs"
+            "activity-logs activity-logs activity-logs activity-logs activity-logs activity-logs";
+    }
+}
 
